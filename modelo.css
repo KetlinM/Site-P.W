@@ -1,0 +1,344 @@
+ul {
+    padding:0px;
+    margin:0px;
+    background-color:#EDEDED;
+    list-style:none;
+    }
+
+ul li {
+    display: inline;
+    }
+
+li ul {
+    position: absolute;
+    left: 149px;
+    top: 0;
+    display: none;
+    }
+
+ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+    background-color:#ededed;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+    }
+
+.imagem {
+    width: 200px;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    }
+.imagem::after {
+    content: attr(data-title); /* estilo que coloco a legenda no lugar */
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    left: 0;
+    }
+
+body {
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    margin: 0;
+    color: grey;
+    }
+      
+html {
+    box-sizing: border-box;
+    }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    }
+  
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    }
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+    }
+      
+.title {
+    color: grey;
+    }
+      
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+      }
+      
+    .button:hover {
+        background-color: #555;
+      }
+      
+    @media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+        }
+      }
+
+.grid {
+    display: grid;
+    grid-template-columns: 100px 200px 300px;
+    }
+
+    * {
+        box-sizing: border-box;
+      }
+    
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    }
+
+p {
+	font-size: 15px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+      
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #0B4C5F;
+    color: white;
+    }
+      
+.header h1 {
+    font-size: 40px;
+    }
+      
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+      
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    }
+      
+.navbar a.right {
+      float: right;
+    }
+      
+.navbar a:hover {
+    background-color: #EDEDED;
+    color: black;
+    }
+      
+.navbar a.active {
+    background-color: #666;
+    color: white;
+    }
+      
+.row {  
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    }
+      
+.side {
+    -ms-flex: 30%; 
+    flex: 30%;
+    background-color: #EDEDED;
+    padding: 20px;
+      }
+      
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: #EDEDED;
+    padding: 20px;
+  }
+
+.fakeimg {
+    width: 100%;
+    padding: 20px;
+  }
+      
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    }
+      
+@media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+      }
+      }
+      
+@media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+      }
+      }
+
+      html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+       
+      
+      .left-column img {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+       
+      .left-column img.active {
+        opacity: 1;
+      }
+      .product-description {
+        border-bottom: 1px solid #E1E8EE;
+        margin-bottom: 20px;
+      }
+      .product-description span {
+        font-size: 12px;
+        color: #358ED7;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+      .product-description h1 {
+        font-weight: 300;
+        font-size: 52px;
+        color: #43484D;
+        letter-spacing: -2px;
+      }
+      .product-description p {
+        font-size: 16px;
+        font-weight: 300;
+        color: #86939E;
+        line-height: 24px;
+      }
+      .product-color {
+        margin-bottom: 30px;
+      }
+       
+      .color-choose div {
+        display: inline-block;
+      }
+       
+      .cable-choose {
+        margin-bottom: 20px;
+      }
+       
+      .cable-choose button {
+        border: 2px solid #E1E8EE;
+        border-radius: 6px;
+        padding: 13px 20px;
+        font-size: 14px;
+        color: #5E6977;
+        background-color: #fff;
+        cursor: pointer;
+        transition: all .5s;
+      }
+       
+      .cable-choose button:hover,
+      .cable-choose button:active,
+      .cable-choose button:focus {
+        border: 2px solid #86939E;
+        outline: none;
+      }
+       
+      .cable-config {
+        border-bottom: 1px solid #E1E8EE;
+        margin-bottom: 20px;
+      }
+       
+      .cable-config a {
+        color: #358ED7;
+        text-decoration: none;
+        font-size: 12px;
+        position: relative;
+        margin: 10px 0;
+        display: inline-block;
+      }
+      
+      .product-price {
+        display: flex;
+        align-items: center;
+      }
+       
+      .product-price span {
+        font-size: 26px;
+        font-weight: 300;
+        color: #43474D;
+        margin-right: 20px;
+      }
+       
+      .cart-btn {
+        display: inline-block;
+        background-color: #7DC855;
+        border-radius: 6px;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 12px 30px;
+        transition: all .5s;
+      }
+      .cart-btn:hover {
+        background-color: #64af3d;
+      }
+      @media (max-width: 940px) {
+        .container {
+          flex-direction: column;
+          margin-top: 60px;
+        }
+       
+        .left-column,
+        .right-column {
+          width: 100%;
+        }
+       
+        .left-column img {
+          width: 300px;
+          right: 0;
+          top: -65px;
+          left: initial;
+        }
+      }
+       
+      @media (max-width: 535px) {
+        .left-column img {
+          width: 220px;
+          top: -85px;
+        }
+      }
