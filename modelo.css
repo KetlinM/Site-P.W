@@ -3,10 +3,17 @@ ul {
     margin:0px;
     background-color:#EDEDED;
     list-style:none;
-    }
+    display: flex;
+    align-items: center;
+  }
+
+ul img{
+  padding: 3px;
+}
 
 ul li {
     display: inline;
+    
     }
 
 li ul {
@@ -19,6 +26,7 @@ li ul {
 ul li a {
     padding: 2px 10px;
     display: inline-block;
+    align-items: center;
     background-color:#ededed;
     color: #333;
     text-decoration: none;
