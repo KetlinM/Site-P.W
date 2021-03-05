@@ -33,6 +33,13 @@ ul li a {
     border-bottom:3px solid #EDEDED;
     }
 
+.footerContato {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  }
+}
+
 .imagem {
     width: 200px;
     margin: 10px;
@@ -197,7 +204,7 @@ p {
 .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background:#E1E8EE;
     }
       
 @media screen and (max-width: 700px) {
