@@ -1,36 +1,12 @@
-ul {
-    padding:0px;
-    margin:0px;
-    background-color:#EDEDED;
-    list-style:none;
-    display: flex;
-    align-items: center;
-  }
-
 ul img{
   padding: 3px;
 }
-
-ul li {
-    display: inline;
-    
-    }
 
 li ul {
     position: absolute;
     left: 149px;
     top: 0;
     display: none;
-    }
-
-ul li a {
-    padding: 2px 10px;
-    display: inline-block;
-    align-items: center;
-    background-color:#ededed;
-    color: #333;
-    text-decoration: none;
-    border-bottom:3px solid #EDEDED;
     }
 
 .imagem {
@@ -52,6 +28,10 @@ body {
     margin: 0;
     color: grey;
     }
+
+.body {
+  margin-top: 25px;
+}
       
 html {
     box-sizing: border-box;
@@ -61,6 +41,20 @@ html {
     box-sizing: inherit;
     }
   
+.logoNavbar {
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.botoesNavbar {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.hoverNavbar:hover {
+  background-color: #6495ED;
+}
+
 .column {
     float: left;
     width: 33.3%;
@@ -121,7 +115,7 @@ body {
     margin: 0;
     }
 
-p {
+.p {
 	font-size: 15px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -145,23 +139,11 @@ p {
     top: 0;
   }
       
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    }
-      
 .navbar a.right {
       float: right;
     }
       
-.navbar a:hover {
-    background-color: #EDEDED;
-    color: black;
-    }
+
       
 .navbar a.active {
     background-color: #666;
@@ -196,9 +178,16 @@ p {
       
 .footer {
     padding: 20px;
-    text-align: center;
     background: #ddd;
     }
+
+.footerCampos {
+  margin: 10px;
+}
+
+.footerCentralizado{
+  text-align: center;
+}
       
 @media screen and (max-width: 700px) {
     .row {   
@@ -292,7 +281,6 @@ p {
       }
        
       .cable-config a {
-        color: #358ED7;
         text-decoration: none;
         font-size: 12px;
         position: relative;

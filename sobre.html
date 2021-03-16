@@ -5,45 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="modelo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>Sobre Nós</title>
 </head>
 <body>
-    <ul id="nav">
-        <li><img src="img/beija-flor-64.png" height="48" width="48"></li>
-        <li><a href="flor.html">Home</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
-        <li><a href="#">Contato</a></li>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary navbarBT fixed-top">
+    <a class="navbar-brand logoNavbar hoverNavbar" href="flor.html">
+      <img src="img/beija-flor-64.png" width="38" height="38" class="d-inline-block align-top" alt="">
+      Floricultura Beija-Flor
+    </a>
+    <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item hoverNavbar botoesNavbar">
+          <a class="nav-link" href="sobre.html">Sobre</a>
+        </li>
+        <li class="nav-item hoverNavbar botoesNavbar">
+          <a class="nav-link" href="produtos.html">Produtos</a>
+        </li>
+        <li class="nav-item hoverNavbar botoesNavbar">
+          <a class="nav-link" href="#">Contato</a>
+        </li>
       </ul>
+    </div>
+  </nav> 
     
     
-        <div class="header">
-        <h1>Sobre a Beija-Flor</h1>
-        <p>A Floricultura Beija-Flor é uma empresa fictícia que tem como objetivo levar o ambiente elegante e relaxante que você merece.</p>
-        </div>
+    <div class="header">
+      <h1>Sobre a Beija-Flor</h1>
+      <p>A Floricultura Beija-Flor é uma empresa fictícia que tem como objetivo levar o ambiente elegante e relaxante que você merece.</p>
+    </div>
    
       
-      <div class="main">
-      <h2 style="text-align:center">Nosso Time</h2>
+  <div class="main">
+    <h2 style="text-align:center">Nosso Time</h2>
+    <main class="container mt-5">
       <div class="row">
-        <div class="column">
-          <div class="card">
-            <img src="https://i.pinimg.com/originals/21/20/a5/2120a5d9f9dcc0c745c185acdf64b494.jpg" alt="Liana" style="width:100%">
-            <div class="container">
-              <h2>Liana Brown</h2>
-              <p class="title">CEO & Founder</p>
-              <p>Botânica formada, conhecedora da grande flora brasileira.</p>
-              <p>lianabrown@florfake.com</p>
-              <p><button class="button">Contact</button></p>
-            </div>
+        <div class="card col-sm-4">
+          <img class="card-img-top" src="https://i.pinimg.com/originals/21/20/a5/2120a5d9f9dcc0c745c185acdf64b494.jpg" alt="Liana">
+          <div class="card-body">
+            <h2>Liana Brown</h2>
+            <p class="title">CEO & Founder</p>
+            <p>Botânica formada, conhecedora da grande flora brasileira.</p>
+            <p>lianabrown@florfake.com</p>
+            <p><button class="button">Contact</button></p>
           </div>
         </div>
-        
-      
-      <div class="column">
-        <div class="card">
-          <img src="https://i.pinimg.com/originals/eb/f1/98/ebf198ee8f26fe3e71b860a9e6181af7.jpg" alt="Lisa" style="width:100%">
-          <div class="container">
+        <div class="card col-sm-4">
+          <img class="card-img-top" src="https://i.pinimg.com/originals/eb/f1/98/ebf198ee8f26fe3e71b860a9e6181af7.jpg" alt="Lisa">
+          <div class="card-body">
             <h2>Lisa Ross</h2>
             <p class="title">Art Director</p>
             <p>Designer talentosa, entusiasta na área de botânica.</p>
@@ -51,21 +60,19 @@
             <p><button class="button">Contact</button></p>
           </div>
         </div>
-      </div>
-      
-        <div class="column">
-          <div class="card">
-            <img src="https://saocarlosemrede.com.br/wp-content/uploads/2018/08/86e35eb7-bbeb-441d-b549-37924ea4454c.jpg" alt="Ben" style="width:100%">
-            <div class="container">
-              <h2>Ben Brown</h2>
-              <p class="title">CEO & Administrador</p>
-              <p>Formado em administração e experiente na área de gerenciamento de empresas de grande porte.</p>
-              <p>benbrown@florfake.com</p>
-              <p><button class="button">Contact</button></p>
-            </div>
+        <div class="card col-sm-4">
+          <img class="card-img-top" src="https://saocarlosemrede.com.br/wp-content/uploads/2018/08/86e35eb7-bbeb-441d-b549-37924ea4454c.jpg" alt="Ben">
+          <div class="card-body">
+            <h2>Ben Brown</h2>
+            <p class="title">CEO & Administrador</p>
+            <p>Formado em administração e experiente na área de gerenciamento de empresas de grande porte.</p>
+            <p>benbrown@florfake.com</p>
+            <p><button class="button">Contact</button></p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </html>

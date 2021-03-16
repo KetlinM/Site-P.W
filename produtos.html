@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="modelo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <style>
         .container {
         max-width: 1200px;
@@ -16,52 +17,62 @@
     <title>Produtos</title>
 </head>
 <body>
-    <ul id="nav">
-        <li><img src="img/beija-flor-64.png" height="48" width="48"></li>
-        <li><a href="flor.html">Home</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
-        <li><a href="#">Contato</a></li>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary navbarBT fixed-top">
+    <a class="navbar-brand logoNavbar hoverNavbar" href="flor.html">
+      <img src="img/beija-flor-64.png" width="38" height="38" class="d-inline-block align-top" alt="">
+      Floricultura Beija-Flor
+    </a>
+    <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item hoverNavbar botoesNavbar">
+          <a class="nav-link" href="sobre.html">Sobre</a>
+        </li>
+        <li class="nav-item hoverNavbar botoesNavbar">
+          <a class="nav-link" href="produtos.html">Produtos</a>
+        </li>
+        <li class="nav-item hoverNavbar botoesNavbar">
+          <a class="nav-link" href="#">Contato</a>
+        </li>
       </ul>
-      <div class="header">
-        <h1>Floricultura Beija-Flor</h1>
-        <p>Como se eu fosse flor, você beija (8)</p>
-      </div>
-
-      <main class="container">
-         
-       
+    </div>
+  </nav> 
+      <main class="container mt-5">
         <div class="right-column">
           <div class="product-description">
             <span>Nossa Loja</span>
-            <h1>Arranjos Naturais</h1>
-            <p>Muitas opções de arranjos de flores naturais para sua comemoração:</p>
+            <h1>Arranjos</h1>
+            <p>Muitas opções de arranjos de flores para sua comemoração:</p>
           </div>
        
-          <div class="product-configuration">
-            <div class="product-color">
-              <span>Flores</span>       
-            </div>
-       
+          <div class="product-configuration">       
             <div class="cable-config">
-              <span>Opções de Flores</span>
+              <h3>Tipos de arranjos</h3>
 
               <div class="row">
-                <div class="coluna">
-                  <img src="https://i.pinimg.com/originals/df/28/bd/df28bdc7b45d3642313ea162cce8af23.png" alt="descrição da imagem" style="width:100%">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="https://i.pinimg.com/originals/df/28/bd/df28bdc7b45d3642313ea162cce8af23.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Naturais</h5>
+                    <p class="card-text">Arranjos compostos apenas de flores naturais.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais...</a>
+                  </div>
                 </div>
-                <div class="coluna">
-                  <img src="https://i.pinimg.com/originals/03/75/d8/0375d89c11a8368150a21756deb0c684.png" alt="descrição da imagem" style="width:100%">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="https://i.pinimg.com/originals/03/75/d8/0375d89c11a8368150a21756deb0c684.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Artificiais</h5>
+                    <p class="card-text">Arranjos compostos apenas por flores artificiais.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais...</a>
+                  </div>
                 </div>
-                <div class="coluna">
-                  <img src="https://i.pinimg.com/originals/1c/40/5d/1c405d2eab21bb5ca2eab153d2757c9c.png" alt="descrição da imagem" style="width:100%">
-                </div></div>
-       
-              <div class="cable-choose">
-                <button>Naturais</button>
-                <button>Artificiais</button>
-                <button>Misto</button>
-              </div>
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="https://i.pinimg.com/originals/1c/40/5d/1c405d2eab21bb5ca2eab153d2757c9c.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Misto</h5>
+                    <p class="card-text">Arranjos compostos por flores naturais e artificiais.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais...</a>
+                  </div>
+                </div>
             </div>
           </div>
        
@@ -73,4 +84,5 @@
         </div>
       </main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </html>
